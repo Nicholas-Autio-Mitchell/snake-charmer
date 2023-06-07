@@ -1,0 +1,31 @@
+{
+  "full_name": "Nicholas Autio Mitchell",
+  "github_username": "Nicholas-Autio-Mitchell",
+  "pypi_username": "{{ cookiecutter.github_username }}",
+  "project_name": "Awesome Project Name",
+  "__project_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+  "__package_name": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
+  "project_description": "Awesome Project Description",
+  "version": "0.1.0",
+  "python_version": "3.10",
+  "__python_flat_version": "py{{ cookiecutter.python_version.replace('.', '') }}",
+  "requirements_file": "requirements.txt",
+  "configure_linters_and_formatters": "y",
+  "create_dot_github_directory": "n",
+  "create_tests_directory": "n",
+  "use_pytest": "n",
+  "command_line_interface": [
+    "No command-line interface",
+    "Argparse",
+    "Hydra",
+    "Click"
+  ],
+  "open_source_license": [
+    "MIT license",
+    "BSD license",
+    "ISC license",
+    "Apache Software License 2.0",
+    "GNU General Public License v3",
+    "Not open source"
+  ]
+}

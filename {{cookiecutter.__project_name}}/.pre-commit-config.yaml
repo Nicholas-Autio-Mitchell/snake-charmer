@@ -1,0 +1,28 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks.git
+    rev: v4.0.1
+    hooks:
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: check-added-large-files
+      - id: check-yaml
+  - repo: local
+    hooks:
+      - id: ruff
+        name: ⚡️ Ruff
+        entry: ruff
+        args:
+          - --fix
+          - --exit-non-zero-on-fix
+        language: python
+        types: [python]
+      - id: black
+        name: 🖤 Black
+        entry: black
+        language: python
+        types_or: [jupyter, python]
+      - id: mypy
+        name: 🐍 mypy
+        entry: mypy
+        language: python
+        types: [python]

@@ -1,0 +1,7 @@
+# Pin versions as soon as possible!
+black
+mypy
+pip
+ruff
+{% if cookiecutter.use_pytest == 'y' -%}pytest{% endif %}
+{% if cookiecutter.command_line_interface|lower == 'click' -%}Click{% endif %}{% if cookiecutter.command_line_interface|lower == 'hydra' -%}hydra-core{% endif %}
